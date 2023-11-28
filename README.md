@@ -8,5 +8,5 @@ This **Chinese Zodiac Animals Wheel** project is an educational interface where 
 - The **sound icon** when clicked plays an **mp3** audio file of the animal being spoken in both English and Chinese. 
 - The **sort menu select element** lets the user sort the animals by **English name, Chinese name** or **Year**.
 The **Descending checkbox** toggles the sort order between ascending-descending.
-- The **spinning wheel** depicts the 12 animals of the Chinese Zodiac. The **animation** is handled by **setInterval(callback, delay)** which runs a function on a 25 ms delay  (40x per sec), which rotates the wheel by the wheel spedd each time the function in invoked. 
-- The **slider control** (input element of type **range**) calls a function every time the slider is changed. The function sets the wheel speed.
+- The **spinning wheel** depicts the 12 animals of the Chinese Zodiac. The **animation** is handled by **setInterval(callback, delay)** which runs a function on a 25 ms delay  (40x per sec), which rotates the wheel by the wheel speed each time the **callbackfunction** is invoked. 
+- The **slider control** (input element of type **range**) runs an **inline anonymous callback function** every time the slider is changed. The function sets the wheel speed, which is used by the setInterval callback to set the rotation angle.
